@@ -16,7 +16,9 @@ function nameSwap(str) {
     // return reverseString
 
     //alternative -> complete all these steps in one line of code
-    return str.split(' ').reverse().join(' ');
+  
+    var arr = str.split(' ')
+    return arr[1] + ' ' + arr[0]
 
 }
 
