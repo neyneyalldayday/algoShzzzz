@@ -19,9 +19,18 @@ function longestWordLength(str) {
     var wordArray = stringWithNoSpec.split(' ');
      
 
-    for (var i = 0; i < wordArray.length; i++) {
-        if (wordArray[i].length > longestWord.length) {
-           longestWord = wordArray[i] 
+    // for (var i = 0; i < wordArray.length; i++) {
+    //     if (wordArray[i].length > longestWord.length) {
+    //        longestWord = wordArray[i] 
+    //     }
+    // }
+
+    //same same
+    
+    for (var count of wordArray) {
+        if (count.length > longestWord.length) {
+            longestWord = count;
+
         }
     }
     return longestWord.length
