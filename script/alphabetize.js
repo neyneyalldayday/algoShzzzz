@@ -16,6 +16,10 @@
  // Array.prototype.join()
   // http://bit.ly/array-join
 
+
+  // Spread operator
+  // http://bit.ly/spread-operator
+
   function alphaOrder(str) {
    // nene way, i was close but the string was still split
     // var sortedStr = str.split('')    
@@ -33,8 +37,9 @@
 
     //all in one step 
 
-    return str.split('').sort().join('');   
+    // return str.split('').sort().join('');   
 
+    return [...str].sort().join('')
   }
 
   console.log(alphaOrder("hello"));
