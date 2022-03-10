@@ -32,16 +32,25 @@
     // var finalString = backwards.join('')
     // return finalString
 
-    // for of loop
+    // for loop
 
-    var string = ''
+    // var string = ''
 
-    for (var i = str.length -1; i >= 0; i --){
-        string += str[i]
+    // for (var i = str.length -1; i >= 0; i --){
+    //     string += str[i]
 
+    // }
+
+    // return string;
+
+    //for of loop
+
+    var reverseString = '';
+
+    for (var letter of str) {
+        reverseString = letter + reverseString;
     }
-
-    return string;
+    return reverseString;
     }
 
     console.log(revString('car'));
