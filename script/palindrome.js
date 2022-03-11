@@ -32,14 +32,24 @@
 
           // step3 -> reverse  string with built in functions/ for loop/for of loop and assign
           // to new variable ' reverseString'
-           var reverseString = [...allSameCase].reverse().join('')
+
+        var reverseString = ''
+
+        for (var i = allSameCase.length -1; i >=0; i--) {
+            reverseString += allSameCase[i];
+        }
+
+
+
+        //    var reverseString = [...allSameCase].reverse().join('')
           // step 4 Return boolean as to whether our original string without special 
           // characters and case insensitive is equal to out reversed string
-            if (reverseString === allSameCase ) {
-                return true
-            } else {
-                return false
-            }
+            // if (reverseString === allSameCase ) {
+            //     return true
+            // } else {
+            //     return false
+            // }
+            return reverseString === allSameCase
       }
 
       console.log(isPalindrome('Eva, Can I Stab Bats In A Cave?'))
