@@ -35,10 +35,13 @@
 
         var reverseString = ''
 
-        for (var i = allSameCase.length -1; i >=0; i--) {
-            reverseString += allSameCase[i];
-        }
+        // for (var i = allSameCase.length -1; i >=0; i--) {
+        //     reverseString += allSameCase[i];
+        // }
 
+        for (var letter of allSameCase) {
+            reverseString = letter + reverseString
+        }
 
 
         //    var reverseString = [...allSameCase].reverse().join('')
