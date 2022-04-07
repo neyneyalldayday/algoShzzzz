@@ -58,3 +58,19 @@ var characterCount = function(str) {
     }
     return charMap
 };
+
+//Write a function that takes an array of numbers as a parameter, and returns the largest number present in the array.
+//For example, given the following array:
+//arr = [3, 1, 17, 5, 6];
+//The following number should be returned:
+//17;
+
+const LargestNumber = function(arr) {
+  arr = [3, 1, 17, 5, 6];
+ return Math.ceil(arr) 
+
+
+
+
+
+}
