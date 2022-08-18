@@ -58,3 +58,5 @@
       console.log(isPalindrome('Eva, Can I Stab Bats In A Cave?'))
       console.log(isPalindrome('Was It A Rat I Saw?'))
       console.log(isPalindrome('A nut for a jar of tuna?'))
+
+      //teshitn so shit
