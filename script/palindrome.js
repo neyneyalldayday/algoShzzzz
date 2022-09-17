@@ -21,27 +21,27 @@
       // http://bit.ly/lowercase-string
 
 
-      function isPalindrome(str) {
+      // function isPalindrome(str) {
           // Step 1 -> use regular expressions to remove all non-word characters
           // e.g. "," with replace method
 
-          var removeSpecial = str.replace(/[^\w]/g , '')
+          // var removeSpecial = str.replace(/[^\w]/g , '')
         //   console.log(removeSpecial)
-          var allSameCase = removeSpecial.toLowerCase()
+          // var allSameCase = removeSpecial.toLowerCase()
         //   console.log(allSameCase)
 
           // step3 -> reverse  string with built in functions/ for loop/for of loop and assign
           // to new variable ' reverseString'
 
-        var reverseString = ''
+        // var reverseString = ''
 
         // for (var i = allSameCase.length -1; i >=0; i--) {
         //     reverseString += allSameCase[i];
         // }
 
-        for (var letter of allSameCase) {
-            reverseString = letter + reverseString
-        }
+        // for (var letter of allSameCase) {
+        //     reverseString = letter + reverseString
+        // }
 
 
         //    var reverseString = [...allSameCase].reverse().join('')
@@ -52,11 +52,46 @@
             // } else {
             //     return false
             // }
-            return reverseString === allSameCase
-      }
+            // return reverseString === allSameCase
+      // }
 
-      console.log(isPalindrome('Eva, Can I Stab Bats In A Cave?'))
-      console.log(isPalindrome('Was It A Rat I Saw?'))
-      console.log(isPalindrome('A nut for a jar of tuna?'))
+      // console.log(isPalindrome('Eva, Can I Stab Bats In A Cave?'))
+      // console.log(isPalindrome('Was It A Rat I Saw?'))
+      // console.log(isPalindrome('A nut for a jar of tuna?'))
 
       //teshitn so shit
+      var s = "MCMXCIV"
+
+
+
+var romanToInt = function(s) {
+    
+    let conversion = {
+        I : 1,
+        V : 5,
+        X : 10,
+        L : 50,
+        C : 100,
+        D : 500,
+        M : 1000
+    }
+    console.log(conversion)
+    
+    let number = 0
+    
+    for (let i = 0; i < s.length; i++){
+        if (conversion[s[i]] < conversion[s[i+1]]) {   
+            console.log(conversion)          
+            number -= conversion[s[i]]           
+        } else {
+            number += conversion[s[i]]
+        }
+    }
+    
+    console.log("fuck")
+    
+   
+  
+};
+
+    
