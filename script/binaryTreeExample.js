@@ -16,20 +16,6 @@
     "target": 12
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function findClosestValueInBst(tree, target) {
     // Write your code here.
     let closestValue = tree.value
